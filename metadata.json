@@ -1,0 +1,4 @@
+{
+  "name": "ShadowBank - BOLA Lab",
+  "description": "A vulnerable-by-design banking application to demonstrate Broken Object Level Authorization (BOLA/IDOR) API vulnerabilities."
+}

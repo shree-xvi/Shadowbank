@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import Scoreboard from './components/Scoreboard';
+import Challenges from './components/Challenges';
 import { User, AppMode } from './types';
 
 const MainApp: React.FC<{
@@ -40,7 +41,8 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/scoreboard" element={<Scoreboard mode={mode} />} />
+        <Route path="/scoreboard" element={<Scoreboard mode={mode} token={token || ''} />} />
+        <Route path="/challenges" element={<Challenges mode={mode} token={token || ''} />} />
         <Route
           path="*"
           element={
